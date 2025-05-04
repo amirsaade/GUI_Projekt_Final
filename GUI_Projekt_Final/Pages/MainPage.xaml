@@ -3,7 +3,9 @@
              x:Class="GUI_Projekt_Final.Pages.MainPage"
              Title="Používatelia">
 
-    <CollectionView ItemsSource="{Binding Users}" SelectionMode="Single" SelectionChanged="OnUserSelected">
+    <CollectionView ItemsSource="{Binding Users}"
+                    SelectionMode="Single"
+                    SelectionChanged="OnUserSelected">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <Grid Padding="10" ColumnDefinitions="Auto, *" RowDefinitions="Auto">

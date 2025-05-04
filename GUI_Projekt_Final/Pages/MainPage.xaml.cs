@@ -11,11 +11,36 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
         Users = new List<User>
-        {
-            new User { UserID = 1, Description = "John Doe", ImageUrl = "https://picsum.photos/id/1/100/100" },
-            new User { UserID = 2, Description = "Jane Smith", ImageUrl = "https://picsum.photos/id/2/100/100" },
-            new User { UserID = 3, Description = "Alice Johnson", ImageUrl = "https://picsum.photos/id/3/100/100" }
-        };
+{
+    new User{
+        UserID = 1,
+        Description = "John Doe",
+        ImageUrl = "https://picsum.photos/id/1/100/100",
+        FullName = "Johnathan Doe",
+        Email = "john@example.com",
+        Role = "Administrator"
+            },
+    new User{
+        UserID = 2,
+        Description = "Jane Smith",
+        ImageUrl = "https://picsum.photos/id/2/100/100",
+        FullName = "Jane Alexandra Smith",
+        Email = "jane@example.com",
+        Role = "Editor"
+            },
+    new User{
+        UserID = 3,
+        Description = "Alice Johnson",
+        ImageUrl = "https://picsum.photos/id/3/100/100",
+        FullName = "Alice Marie Johnson",
+        Email = "alice@example.com",
+        Role = "Viewer"
+             }
+         
+        
+        
+    };
+
 
         BindingContext = this;
     }
